@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9D26B1"
+    android:backgroundTint="#43044E"
     tools:context=".LoginActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -27,7 +29,7 @@
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="@string/email"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -46,7 +48,8 @@
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:layout_marginTop="32dp"
+            android:hint="@string/password"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -54,23 +57,27 @@
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="344dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="344dp"
-        android:text="LOGIN"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="162dp"
+        android:backgroundTint="#9C27B0"
+        android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
 
-    <Button
-        android:id="@+id/btnSignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="344dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="344dp"
-        android:text="SIGNUP"
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="288dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="67dp"
+        android:text="@string/signup"
+        android:textColor="#F4B4FF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
