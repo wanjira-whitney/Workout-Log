@@ -7,18 +7,19 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 
 class SignUpActivity : AppCompatActivity() {
     lateinit var etFirstName: EditText
-    lateinit var tilFirstName: TextInputEditText
-    lateinit var etLastName:EditText
-    lateinit var tilLastName:TextInputEditText
-    lateinit var etEmail:EditText
-    lateinit var tilEmail:TextInputEditText
-    lateinit var etPassword:EditText
-    lateinit var tilPassword:TextInputEditText
-    lateinit var etConfirmPassword:EditText
-    lateinit var tilConfirmPassword:TextInputEditText
+    lateinit var tilFirstName: TextInputLayout
+    lateinit var etLastName:TextInputEditText
+    lateinit var tilLastName:TextInputLayout
+    lateinit var etEmail:TextInputEditText
+    lateinit var tilEmail:TextInputLayout
+    lateinit var etPassword:TextInputEditText
+    lateinit var tilPassword:TextInputLayout
+    lateinit var etConfirmPassword:TextInputEditText
+    lateinit var tilConfirmPassword:TextInputLayout
     lateinit var btnSignUp: Button
     lateinit var tvLogIn:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +38,7 @@ class SignUpActivity : AppCompatActivity() {
         btnSignUp= findViewById(R.id.btnSignUp)
         tvLogIn=findViewById(R.id.tvLogIn)
         tvLogIn.setOnClickListener {
-            val intent= Intent (this,SignUpActivity::class.java)
+            val intent= Intent (this,LoginActivity::class.java)
             startActivity(intent)
         }
         btnSignUp.setOnClickListener {

@@ -7,13 +7,14 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 
 class LoginActivity : AppCompatActivity() {
     lateinit var tvsignup:TextView
-    lateinit var etEmail: EditText
-    lateinit var etPassword: EditText
-    lateinit var tilEmail: TextInputEditText
-    lateinit var tilPassword:TextInputEditText
+    lateinit var etEmail: TextInputEditText
+    lateinit var etPassword: TextInputEditText
+    lateinit var tilEmail: TextInputLayout
+    lateinit var tilPassword:TextInputLayout
     lateinit var btnLogin: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
